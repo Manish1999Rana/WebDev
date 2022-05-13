@@ -10,10 +10,11 @@
          position: absolute;
          background-color: aqua;
          top: 5%;
-         left: 6%;
-         width: 27%;
+         left: 5.9%;
+         width: 26%;
          height: 19%;
          border-radius: 50%;
+         border: 7px solid rgb(111, 189, 241);
          overflow: hidden;
       }
       #border{
@@ -23,34 +24,61 @@
          height: 1158px;
          width: 819px;
       }
-      h1{
+      #manish{
          text-align: center;
-         font-size:58px;
+         font-size:60px;
       }
       body{
          background-color: gray;text-align: center;
+         font-family: Century Gothic;
       }
-   
       #name{
          position: absolute;
-         left: 35%;
-         top: 5%;
+         left: 42%;
+         top: 8.5%;
          width: 30%;
          height: 10%;
-         font-family: Century Gothic;
+         text-align: left;
       }
       @font-face {
          font-family: Century Gothic;;
          src: url(GOTHIC.TTF);
+      }
+      img{position: absolute;
+         left: -3%;
+         top: -2%;
+         width: 104%;
+         height: 135%;
+      }
+      #job{
+         position: absolute;
+         top: 22%;
+         left: 42%;
+         font-size: 11px;
+         -webkit-transform:scaleY(2.5);
+         -moz-transform:scaleY(2.5);
+         -ms-transform:scaleY(2.5);
+         -o-transform:scaleY(2.5);
+         transform:scaleY(2.5);
+      }
+      #edu{
+         position: absolute;
+         top: 23.5%;
+         left: 42%;
+         width: 56%;
+         height: 40%;
+         text-align: left;
       }
    </style>
 </head>
 <body>
    <div id="border">
       <div id="pic">
-         <img src="Photo 2019.jpg" alt="Manish" width="100%">
+         <img src="Photo 2019.jpg" alt="Manish">
       </div>
-      <div id="name"><h1>MANISH RANA</h1></div>
+      <div id="name"><span id="manish">MANISH RANA</span></div>
+      <div id="job">Web/Software Developer</div>
+      <div id="edu"><h4>EDUCATION</h4></div>
    </div>
 </body>
 </html>
