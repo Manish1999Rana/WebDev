@@ -5,127 +5,234 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-</head>
-<style>
-   body{
-      margin: 0%;
-      padding: 0%;
-   }
-   .topnav {
-      overflow: hidden;
-      background: linear-gradient(-45deg, rgb(223, 245, 253), rgb(255, 240, 107), rgb(206, 255, 250), rgb(218, 165, 32));
-      background-size: 400% 400%;
-      animation: Gradient 20s ease infinite;
-   }
-   @keyframes Gradient {
-      0% {background-position: 0% 50%}
-      50% {background-position: 100% 50%}
-      100% {background-position: 0% 50%}
-   }
- 
-   .topnav .a {
-      float: left;
-      color: black;
-      text-align: center;
-      text-decoration: none;
-      font-size: 17px;
-      margin: 26px;
-      padding-left: 40px;
-      padding-top: 2px;
-      font-weight: bold;
-      font-family: Arial;
-   }
-
-   .topnav a:hover {
-      color: gray;
-   }
-
-   .logo{
-      float: left;
-      margin: 15px;
-      position: relative;
-      width: 80px;
-      height: 50px;
-      border-radius: 6px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-   }
-   .slides img {
-      vertical-align: middle;
-      width: 100%;
-      height: 526px;
-   }
-   .slideshow-container {
-  max-width: 1350px;
-  max-height: 526px;
-  position: relative;
-  overflow: hidden;
-}
-   .prev,
-   .next {
-      position: absolute;
-      top: 50%;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      transition: 0.6s ease;
-      user-select: none;
-   }
-   .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-   }
-.prev:hover,.next:hover{
-   background-color: white;
-   color: black;
-}
-</style>
-<body>
    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript">
+   <script type="text/javascript">
       $(document).ready(function () {
-          $("body").on("contextmenu",function(e){
-              return false;
-          });
+         $("body").on("contextmenu",function(e){
+           return false;
+         });
       });
-    </script>
-      <div class="topnav">
-         <a class="active" href="#home"><img class="logo" src="Images/365ep.jpg" alt="Home"></a>
-         <a class="a" href="#movies">Movies</a>
-         <a class="a" href="#tv_series">Tv Series</a>
-         <a  class="a"href="#audio">Audio</a>
-      </div>
-      <div class="content">
+   </script>
+   <style>
+      body{
+         margin: 0%;
+         padding: 0%;
+         background-color: black;
+         color: white;
+         font-family: Arial;
+      }
+      .topnav {
+         overflow: hidden;
+         clear: both;
+         background: linear-gradient(-45deg, rgb(156, 242, 253), rgb(255, 240, 107), rgb(156, 242, 253), rgb(255, 240, 107));
+         background-size: 400% 400%;
+         animation: Gradient 20s ease infinite;
+      }
+      @keyframes Gradient {
+         0% {background-position: 0% 50%}
+         50% {background-position: 100% 50%}
+         100% {background-position: 0% 50%}
+      }
+    
+      .topnav .a {
+         float: left;
+         color: black;
+         text-align: center;
+         text-decoration: none;
+         font-size: 17px;
+         margin: 26px;
+         padding-left: 40px;
+         padding-top: 2px;
+         font-weight: bold;
+      }
+   
+      .topnav a:hover {
+         color: gray;
+      }
+   
+      .logo{
+         float: left;
+         margin: 15px;
+         position: relative;
+         width: 80px;
+         height: 50px;
+         border-radius: 6px;
+         overflow: hidden;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+      }
+      .slides img {
+         vertical-align: middle;
+         width: 100%;
+         height: 526px;
+      }
+      .slideshow-container {
+     max-width: 1350px;
+     max-height: 526px;
+     position: relative;
+     overflow: hidden;
+   }
+      .prev,
+      .next {
+         position: absolute;
+         top: 50%;
+         padding: 16px;
+         margin-top: -22px;
+         color: white;
+         transition: 0.6s ease;
+         user-select: none;
+      }
+      .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+      }
+   .prev:hover,.next:hover{
+      background-color: white;
+      color: black;
+   }
+   hr{
+      color: white;
+   }
+   .movies {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px 6px;
+  margin-bottom: 50px;
+  float: left;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+.type{
+   position: relative;
+   margin-top: 30px;
+   margin-left: 30px;
+   margin-right: 30px;
+   clear: both;
+}
+   </style>
+</head>
 
-         <div class="head-content">
- 
-           <div class="slideshow-container">
-             <div class="slides">
-               <img src="Images/BArdo.jpg" alt="hero carousel">
-             </div>
- 
-             <div class="slides">
-               <img src="Images/Enhanced.jpg" alt="hero carousel">
-             </div>
- 
-             <div class="slides">
-               <img src="Images/Freaky.jpg" alt="hero carousel">
-             </div>
- 
-             <div class="slides">
-               <img src="Images/Green Land.jpg" alt="hero carousel">
-             </div>
- 
-             <div class="slides">
-               <img src="Images/Halloween.jpg" alt="hero carousel">
-             </div>
- 
-             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-           </div>
- 
-         </div>
+<body>
+   <div class="topnav">
+      <a class="active" href="#home"><img class="logo" src="Images/365ep.jpg" alt="Home"></a>
+      <a class="a" href="#movies">Movies</a>
+      <a class="a" href="#tv_series">Tv Series</a>
+      <a  class="a"href="#audio">Audio</a>
+   </div>
+   <div class="slideshow-container">
+      <div class="slides">
+         <img src="Images/BArdo.jpg">
+      </div>
+      <div class="slides">
+         <img src="Images/Enhanced.jpg">
+      </div>
+      <div class="slides">
+         <img src="Images/Freaky.jpg">
+      </div>
+      <div class="slides">
+         <img src="Images/Green Land.jpg">
+      </div>
+      <div class="slides">
+         <img src="Images/Halloween.jpg">
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+   </div>
+   <div class="type"><h1> Popular in Action</h1>
+      <hr>
+      <div class="movies">
+         <img src="Images/BArdo.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Enhanced.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Freaky.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Green Land.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Halloween.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Hitman.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+   </div>
+   
+   <div class="type" ><h1> Popular in Drama</h1>
+      <hr>
+      <div class="movies">
+         <img src="Images/BArdo.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Enhanced.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Freaky.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Green Land.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Halloween.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Hitman.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+   </div>
+   <div class="type" ><h1> Popular in Sci-fi</h1>
+      <hr>
+      <div class="movies">
+         <img src="Images/BArdo.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Enhanced.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Freaky.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Green Land.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Halloween.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+      <div class="movies">
+         <img src="Images/Hitman.jpg"  width=200 height=200 />
+         <div class="overlay"><b>Last City</b><br/>Thriller, Mystery & Comedy.</div>
+      </div>
+   </div>
+   <div class="topnav">
+      <div><a class="active" href="#home"><img class="logo" src="Images/365ep.jpg" alt="Home"></a></div>
+      <div style="position: relative;float: left;margin-top: 25px; color: black;"> Powered by 365 Entertainment Portal 2022. All Rights Reserved.</div>
+   </div>
 
 </body>
 </html>
