@@ -84,14 +84,30 @@
          position: relative;
          overflow: hidden;
       }
-      .movies {
+      #media-carousel-container {
+         margin: 10px 40px 40px 40px;
+      }
+
+      #media-holder-action,
+      #media-holder-drama,
+      #media-holder-scifi {
+         clear: both;
+      }
+      #image-container-action,
+      #image-container-drama,
+      #image-container-scifi {
+         height: 250px;
+      }
+
+      .media-carousel,
+      .media-carousel-movies {
          position: relative;
          width: 200px;
          height: 200px;
-         margin: 10px 6px;
-         margin-bottom: 50px;
+         margin: 10px 5px;
          float: left;
       }
+
       .overlay {
          position: absolute;
          bottom: 0;
@@ -186,11 +202,173 @@
          <option value="Drama">Drama</option>
          <option value="Thriller">Thriller</option>
       </select>
-         <input type="text" name="name" placeholder="search movie by name" >
-         <div class="over"><a  onclick="plusSlides(1, 0)"><img src="Images/Search.png" alt="Search" width="110%" height="75%"></a></div>
+         <input type="text" class="search-query" name="name" placeholder="search movie by name" oninput="updateResults()">
+         <div class="over"><a  onclick="updateResults()"><img src="Images/Search.png" alt="Search" width="110%" height="75%"></a></div>
    </div>
 
-    <div class="topnav">
+   
+
+   <div id="media-carousel-container">
+      <div id="media-holder-action">
+        <div id="image-container-action">
+          <div class="movies-action">
+            <div class="media-carousel-movies">
+              <img src="365mov/nano1.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Haider</b><br/>Indian crime tragedy film.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano2.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Dream 2</b><br/>Thriller, Mystery & Comedy </div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano3.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Batman</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano4.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Monster Manav</b><br/>Japanese manga series written by Tsugumi.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano5.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Kill Bill</b><br/>2003 American martial arts film.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano6.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Rowdy</b><br/>Indian action drama film.</div>
+            </div>
+          </div>
+          <div class="movies-drama">
+            <div class="media-carousel-movies">
+              <img src="365mov/nano7.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Agnipaath</b><br/>Indian crime tragedy film.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano8.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Ankhein</b><br/>Thriller, Mystery & Comedy .</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano9.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Guide</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano10.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Deewar</b><br/>2016 â€§ Fantasy/Science Fiction.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano11.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Sholay</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano12.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">K3G</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano13.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Shaurya</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano14.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Cheeni Kam</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano15.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Ishq Vishq</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano16.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Padmaavat</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano17.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Kai Po Che</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano18.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Raabta</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+          </div>
+
+          <div class="movies-scifi">
+            <div class="media-carousel-movies">
+              <img src="365mov/nano19.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Interstellar</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano20.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Star Wars</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano21.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Thor</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano22.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Captain America</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano23.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">X-Men</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+
+            <div class="media-carousel-movies">
+              <img src="365mov/nano24.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Black Widow</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano25.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Iron-Man</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano26.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Hulk</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano27.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Captain Marvel</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano28.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Wonder Woman</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano29.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Batwoman</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano30.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Batman</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano31.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Superman</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano32.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Superwoman</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano33.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Doctor Strange</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano34.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Mars</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano35.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Gravity</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+            <div class="media-carousel-movies">
+              <img src="365mov/nano36.jpg"   width=200 height=200 />
+              <div class="overlay"><b class="movie-title">Martian</b><br/>A Marvel Comics superhero team.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+   </div>
+
+   <div class="topnav">
       <div><a class="active" href="#home"><img class="logo" src="Images/365ep.jpg" alt="Home"></a></div>
       <div style="position: relative;float: left;margin-top: 25px; color: black;"> Powered by 365 Entertainment Portal 2022. All Rights Reserved.</div>
    </div>
