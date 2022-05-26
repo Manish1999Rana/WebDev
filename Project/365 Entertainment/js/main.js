@@ -26,7 +26,7 @@ function showSlides(n, no) {
 
 
 
-var movieTitle;
+var movieTitle="";
 var currentGenre = "Genre";
 var slideIndex = [1, 1];
 showSlides(1, 0);
@@ -80,6 +80,9 @@ function updateResults() {
   }
   if (currentGenre == 'Sci-Fi') {
     movieTitle = document.getElementsByClassName('movies-scifi')[0].getElementsByClassName('movie-title');
+  }
+  else{
+    movieTitle = document.getElementsByClassName('movie-title');
   }
 
 
