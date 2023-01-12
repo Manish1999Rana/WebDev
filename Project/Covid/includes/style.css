@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+}
+.header{
+    background:black fixed top;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.leftBox{
+    margin: 5px;
+    display: flex;
+    width: 100px;
+    font-size: 22px;
+}
+.leftBox a{
+    color: antiquewhite;
+}
+a img{
+    height: 50px;
+    width: auto;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+a:hover{
+    color:white !important;
+}
+.RightBox{
+    margin: 5px;
+    display: flex;
+    font-size: 18px;
+}
+.RightBox a{
+    color: rgb(170, 170, 170);
+}
+#Right{
+    display: none;
+}
+.Right{
+    background-color: black;
+}
+@media screen and (max-width:700px){
+    #Right{
+        display: flex;
+    }
+#Right:hover .Right{
+    display: list-item;
+}}
+
+.con{
+    display: none;
+    padding: 5px;
+    background-clip: margin-box;
+
+}
+#drop:hover .con{
+    display:inherit;
+}
+input{
+    margin-left: 5px;
+    align-self: center;
+    height: 30px;
+    border-radius: 5px;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0%;
+}
+#overflow{
+    background-color: black;
+}
