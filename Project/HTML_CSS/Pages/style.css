@@ -24,13 +24,20 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 }
-@media screen and (min-width:550px){
+@media screen and (max-width:550px){
 #nav{
     background-color: yellow;
-    display: none;
+    display: flexbox;
     width: 100%;
     gap: 30px;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+}
+#image{
+    width: 100vw;
+    height: 75%;
+    background-image: url("../includes/image\ 2.png");
+    background-repeat: round;
+    background-size:cover;
 }
