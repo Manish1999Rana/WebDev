@@ -1,14 +1,19 @@
 body{
     margin: 0%;
 }
+ul{
+    margin: 0%;
+}
 #nav a{
     color: grey;
     text-decoration: none;
+    padding: 20px;
+    box-sizing: content-box;
 }
 .active{
     color: black !important;
 }
-@media screen and (min-width:550px){
+@media screen and (min-width:600px){
 #menu{
     position: absolute;
     top: 0%;
@@ -16,6 +21,7 @@ body{
     display: none;
 }
 #nav{
+    padding: 14px;
     background-color: yellow;
     display: flex;
     width: 100%;
@@ -23,9 +29,31 @@ body{
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+#position{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: auto;
 }
-@media screen and (max-width:550px){
+#image{position: absolute;
+    left: 0%;
+    width: 70vw;
+    height: 100%;
+    background-image: url("../includes/image\ 2.png");
+    background-repeat: round;
+    background-size:cover;
+}
+#text{position: absolute;
+    right: 0%;
+    width: 30vw;
+    height: 100%;
+}
+}
+@media screen and (max-width:600px){
 #nav{
+    padding: 14px;
     background-color: yellow;
     display: flexbox;
     width: 100%;
@@ -33,17 +61,58 @@ body{
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-}
-#body{
-    position: relative;
-    height: 80vh;
-    width: 100%;
+#position{
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    width: 80%;
+    height: auto;
 }
 #image{position: relative;
     left: 0%;
-    width: 70vw;
-    height: 100%;
+    width: 100vw;
+    height: 50%;
     background-image: url("../includes/image\ 2.png");
     background-repeat: round;
     background-size:cover;
+}
+#text{position: relative ;
+    right: 0%;
+    width: 100vw;
+    height: 50%;
+}
+}
+#body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.topic{
+    color: gray;
+    font-style: italic;
+    font-size: medium;
+}
+h2{
+    margin-top: 5px;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+#color{
+    display: flex;
+    gap: 5px;
+}
+.circle:hover{
+    border: 1px solid black;
 }
