@@ -1,0 +1,36 @@
+body{
+    margin: 0%;
+}
+#nav a{
+    color: grey;
+    text-decoration: none;
+}
+.active{
+    color: black !important;
+}
+@media screen and (min-width:550px){
+#menu{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+}
+#nav{
+    background-color: yellow;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+}
+@media screen and (min-width:550px){
+#nav{
+    background-color: yellow;
+    display: none;
+    width: 100%;
+    gap: 30px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+}

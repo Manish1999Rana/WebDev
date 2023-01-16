@@ -1,0 +1,67 @@
+body{
+    margin: 0%;
+}
+@media screen and (min-width:600px) {
+#image{
+    position: absolute;
+    right: 0%;
+    top:0%;
+    width: 70vw;
+    height: 100vh;
+    background-image: url("image 1.png");
+    background-repeat: round;
+    background-size:cover;
+}
+#name{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 30%;
+    bottom: 30%;
+    height: auto;
+    width: auto;
+}
+#text{
+    position: absolute;
+    width: 30vw;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}}@media screen and (max-width:600px){
+#image{
+    position: absolute;
+    right: 0%;
+    top:0%;
+    width: 100vw;
+    height: 75%;
+    background-image: url("image 1.png");
+    background-repeat: round;
+    background-size:cover;
+}
+#name{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 0%;
+    bottom: 0%;
+    height: auto;
+    width: auto;
+}
+#text{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 70%;
+    width: 100vw;
+    height: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}}
+#but{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(201, 201, 41);
+    font-weight: bold;
+    border-radius: 10px;
+}

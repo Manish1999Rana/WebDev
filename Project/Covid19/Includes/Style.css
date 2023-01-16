@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(214, 214, 214);
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+}
+ul{
+    padding: 0%;
+}
+#header{
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    background-color: black;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+    align-items:top;
+}
+#textLogo{
+    color: antiquewhite;
+    margin-top: 10px;
+}
+#menu{
+    margin-right: 10px;
+    align-items: center;
+    gap: 5px;
+
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: white;
+}
+@media screen and (min-width: 840px){
+    #menu{
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        
+    }
+}
+.menuList{
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    text-align: center;
+}
+#dropdown{
+    position: relative;
+    display: none;
+    margin-top: 10px;
+    background-color: gray;
+}
+#short:hover #menu{
+    display: flex;
+    flex-direction: column;
+}
+#user:hover #dropdown{
+    display: flex;
+    flex-direction: column;
+}
+#dropdown a{
+    color:black;
+}
+#dropdown a:hover {
+    color:grey;
+}
+#dropdown ul:hover{
+    background-color: aliceblue;
+}
+.Users{
+    padding: 8px 18px;
+    box-sizing:initial
+}
+#Search{
+    color: green;
+    background-color: rgba(100, 00, 00, 0);
+    border: 1px solid green;
+}
+#home{
+    position: relative;
+    width: 100%;
+    height: 75vw;
+    background-image: url("3.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    animation: picture linear infinite;
+    animation-duration: 10s;
+}
+@keyframes picture {
+    0%{
+        background-image: url("3.jpg");
+    }
+    33%{
+        background-image: url("2.jpg");
+    }
+    66%{
+        background-image: url("1.jpg");
+    }
+}
+#text{position: absolute;
+    bottom: 20px;
+    left: 15%;
+    right: 15%;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    color: antiquewhite;
+}
