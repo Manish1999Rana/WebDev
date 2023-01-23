@@ -1,7 +1,8 @@
+package Questions.Codebytes;
 import java.util.*; 
 //import java.io.*;
 
-class Main {
+class Test2 {
 
   public static String ThirdGreatest(String strArr) {
     // code goes here  
