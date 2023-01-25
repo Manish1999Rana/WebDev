@@ -16,6 +16,12 @@ class Result {
 
    public static int towerBreakers(int n, int m) {
       // Write your code here
+      int count;
+      for(int i=0;m>1;i++){
+        if(m%(m-i)==0){
+
+        }
+      }
       return 0;
    }
 
